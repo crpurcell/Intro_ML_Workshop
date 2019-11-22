@@ -31,7 +31,7 @@ drive.mount('/content/gdrive')
 Add another code cell to the notebook and run the following lines of code:
 
 ```
-cd gdrive/'My Drive'
+%cd gdrive/'My Drive'
 !git clone https://github.com/crpurcell/Q2Q_ML_2019.git
 ```
 
