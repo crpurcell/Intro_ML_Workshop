@@ -31,8 +31,8 @@ drive.mount('/content/gdrive')
 Add another code cell to the notebook and run the following lines of code:
 
 ```
-%cd gdrive/'My Drive'
-!git clone https://github.com/crpurcell/Q2Q_ML_2019.git
+cd gdrive/'My Drive'
+!git clone https://github.com/X-sensing/Intro_ML_Workshop.git
 ```
 
 This clones (downloads) the course materials from the GitHub online
@@ -63,7 +63,7 @@ to your Google Drive:
 from google.colab import drive
 drive.mount('/content/gdrive')
 import os
-os.chdir('./gdrive/My Drive/Q2Q_ML_2019/')
+os.chdir('./gdrive/My Drive/Intro_ML_Workshop/')
 ```
  * Enter your authorization code from the provided link again.
 
