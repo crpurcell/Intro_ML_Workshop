@@ -15,7 +15,9 @@ you have enough space on your Google Drive (check at
 
  * Go to the URL [https://colab.research.google.com](https://colab.research.google.com)
  * Log in to your Google account. 
- * Click on the New Python 3 notebook from the File menu to create a new notebook.
+ * Click on the 'New Python 3 Notebook' link in the dialog box,
+   or select from the File menu. This will open a Jupyter Notebook
+   called 'Untitled0.ipynb' - you can rename this by clicking on the name.
  * Add a code cell to the notebook with the following code:
 
 ```
@@ -31,12 +33,18 @@ drive.mount('/content/gdrive')
 Add another code cell to the notebook and run the following lines of code:
 
 ```
-cd gdrive/'My Drive'
-!git clone https://github.com/X-sensing/Intro_ML_Workshop.git
+%mkdir /content/gdrive/'My Drive'/X-Sensing
+%cd /content/gdrive/'My Drive'/X-Sensing
+```
+and then
+
+```
+!git clone https://github.com/X-Sensing/Intro_ML_Xsensing.git
 ```
 
 This clones (downloads) the course materials from the GitHub online
-repository.
+repository into the folder ```X-Sensing/Intro_ML_Xsensing``` on your
+Google drive.
 
 
 **NOTE: steps 1 & 2 only need to be done once - when you start for the first
@@ -62,10 +70,15 @@ to your Google Drive:
 ```
 from google.colab import drive
 drive.mount('/content/gdrive')
-import os
-os.chdir('./gdrive/My Drive/Intro_ML_Workshop/')
 ```
- * Enter your authorization code from the provided link again.
 
- * Run the code cell. Now, the notebook is ready for your experiment.
+Enter your authorization code from the provided link again. Then
+add another cell and run the code:
+
+```
+%cd /content/gdrive/'My Drive'/X-Sensing/Intro_ML_Xsensing
+```
+
+Now the notebook is running in the correct directory and is ready your
+experiment.
 
